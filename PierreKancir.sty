@@ -40,7 +40,7 @@
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{pierre.kancir@gmail.com}
 %\homepage{}
-\photo[92pt]{identity}
+%\photo[92pt]{identity}
 
 
 \AtBeginDocument{\renewcommand{\labelitemi}{-- }}
@@ -52,8 +52,9 @@
 
 % Proper alignment
 \usepackage[originalcommands]{ragged2e}
-\renewcommand*{\cvcomputer}[4]{%
-  \cvdoubleitem{#1}{\small\raggedright#2}{#3}{\small\raggedright#4}}
+\renewcommand{\cvcomputer}[2]{\cvline{#1}{\small#2}}
+%\renewcommand*{\cvcomputer}[4]{%
+%  \cvdoubleitem{#1}{\small\raggedright#2}{#3}{\small\raggedright#4}}
 
 % Not all fonts have an sl shape
 \renewcommand*{\cventry}[6]{%
@@ -77,8 +78,8 @@
 \newcommand*{\devnotes}[2]{%
 \vfill
 \footnotetext[1]{#1}
-\footnotetext[2]{#2}
+\footnotetext[7]{#2}
 }
 
 \newcommand*{\developer}{\footnotemark[1]}
-\newcommand*{\contributor}{\footnotemark[2]}
+\newcommand*{\contributor}{\footnotemark[7]}
