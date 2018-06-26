@@ -1,6 +1,8 @@
 \documentclass[11pt,a4paper]{moderncv}
 
 \usepackage{PierreKancir}
+\usepackage[utf8]{inputenc}       % encodage à privilégier pour la portabilité et +
+\usepackage{eurosym}
 \usepackage[french]{babel}
 %\frenchbsetup{StandardLists=true} % regle les problemes de lists
 \linespread{0.9}
@@ -30,7 +32,16 @@
 
 \section{Exp\'erience professionnelle}
 
-\cventry{2013 -- Aujourd'hui}{Doctorant/ Ing\'enieur d'\'etude}{\href{http://www.retdtechfrance.fr/}{Retdtechfrance}}{Rennes}{}{%
+\cventry{2017 -- Aujourd'hui}{Ing\'enieur R\&D}{\href{http:///www.azurdrones.com/}{AzurDrones / Skeyetech}}{M\'erignac}{}{%
+PME spécialiste des services de captation et de traitement de données, conseil, formation et surveillance par drones.
+\begin{itemize}
+ \item Cr\'eation de la seconde version de la solution de drone autonome avec station d'accueil ;
+ \item Mise en place du service système embarqué : gestion des projets, installation d'un outil de versionning, d'intégration continue et de test ;
+ \item Prototypage d'un drone en bus CAN avec UAVCAN et localisation par balise Ultra Wideband ;
+ \item Renforcement par utilisation de simulations de la gestion et détection des pannes et des méthode de navigation du drone volant ;
+\end{itemize}}
+
+\cventry{2013 -- 2017}{Doctorant/ Ing\'enieur d'\'etude}{\href{http://www.retdtechfrance.fr/}{Retdtechfrance}}{Rennes}{}{%
 TPE sp\'ecialis\'ee en recherche et d\'eveloppement en m\'ecatronique et constructeur de drones et de syst\`emes robotiques.
 \begin{itemize}
  \item Cr\'eation de syst\`emes robotiques et robotis\'es, syt\`emes multi robots multi-plateformes (air, terre, mer) ;
@@ -38,27 +49,6 @@ TPE sp\'ecialis\'ee en recherche et d\'eveloppement en m\'ecatronique et constru
  \item Gestion de projet, r\'eponses \`a consultations, \`a appels d'offres publics, r\'edaction de documentation technique ;
  \item Participation \`a des projets de recherches: Essaim de drones {\href{https://recherche.telecom-bretagne.eu/daisie}{DAISIE}}, Bras robot gonflable {\href{http://www.warein-sas.com/c/innovation}{Bulle}}
 \end{itemize}}
-
-\subsection{Autres Exp\'eriences}
-\cventry{2017 -- Aujourd'hui}{Google Summer Of Code}{\href{https://summerofcode.withgoogle.com/projects/\#6723821496172544}{Google}}{}{}{%
-Participation au GSOC 2017 avec Ardupilot.
-\begin{itemize}
-	\item R\'eecriture du code du Rover pour accepter diff\'erentes configurations et types de moteurs ;
-	\item Impl\'ementation de l'\'evitement d'obstacles ;
-	\item Am\'elioration de la compatibilit\'e avec ROS et Gazebo et cr\'eation de tutoriels ;
-	\item R\'eecriture de l'int\'egration continue.
-\end{itemize}}
-\cventry{2015 -- Aujourd'hui}{Developpeur ArduPilot}{\href{ardupilot.org}{Ardupilot}}{}{}{%
-Ardupilot est un projet open-source d'autopilote pour micro v\'ehicules multi-plateformes.
-\begin{itemize}
-	\item Am\'elioration du code pour UGV ;
- 	\item R\'eecriture d'une partie du code en C++11 et Python3 et bugs fixes ;
- 	\item Am\'elioration du simulateur SITL (Software In The Loop) ;
- 	\item Am\'elioration de la compatibilit\'e avec ROS et Gazebo ;
- 	\item Aide \`a la communaut\'e et participation aux directions prises par le projet.
-\end{itemize}}
-
-
 
 \section{Comp\'etences}
 
@@ -88,6 +78,27 @@ Ardupilot est un projet open-source d'autopilote pour micro v\'ehicules multi-pl
 \tllabelcventry{2007}{2010}{2007 -- 2010}{Classe pr\'eparatoire scientifique aux grandes \'ecoles en fili\`ere Physique et Technologie}{\href{http://www.ldmraspail.fr/cpge-ptsi-pt.php}{Lyc\'ee Raspail}}{Paris}{Classe Etoile}{}
 
 \tldatecventry{2007}{Baccalaur\'eat S}{\href{http://www.lm-st-cyr.fr/}{Lyc\'ee Militaire Saint Cyr l'\'Ecole}}{Saint Cyr l'\'Ecole}{Mention Assez Bien}{}
+
+
+\subsection{Autres Exp\'eriences}
+\cventry{2017 -- 2017}{Google Summer Of Code}{\href{https://summerofcode.withgoogle.com/projects/\#6723821496172544}{Google}}{}{}{%
+Participation au GSOC 2017 avec Ardupilot.
+\begin{itemize}
+	\item R\'eecriture du code du Rover pour accepter diff\'erentes configurations et types de moteurs ;
+	\item Impl\'ementation de l'\'evitement d'obstacles ;
+	\item Am\'elioration de la compatibilit\'e avec ROS et Gazebo et cr\'eation de tutoriels ;
+	\item R\'eecriture de l'int\'egration continue.
+\end{itemize}}
+
+\cventry{2015 -- Aujourd'hui}{D\'eveloppeur ArduPilot}{\href{ardupilot.org}{Ardupilot}}{}{}{%
+Ardupilot est un projet open-source d'autopilote pour micro v\'ehicules multi-plateformes.
+\begin{itemize}
+	\item Am\'elioration du code pour UGV et UAV;
+ 	\item R\'eecriture d'une partie du code en C++11 et Python3 et bugs fixes ;
+ 	\item Am\'elioration du simulateur SITL (Software In The Loop) et autotest;
+ 	\item Am\'elioration de la compatibilit\'e avec ROS et Gazebo ;
+ 	\item Aide \`a la communaut\'e et participation aux directions prises par le projet.
+\end{itemize}}
 
 \section{Langues}
 \cvlanguage{Anglais}{Comp\`etence professionnelle, IELTS: 7.0/9.0}{Pratique r\'eguli\`ere}
