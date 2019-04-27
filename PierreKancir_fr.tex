@@ -10,15 +10,23 @@
 \usepackage[scale=0.8,margin=0.9in]{geometry}
 %\frenchbsetup{StandardLists=true} % regle les problemes de lists
 % \linespread{0.9}
+\AfterPreamble{\hypersetup{
+  pdfauthor={Pierre Kancir},
+  pdftitle={Pierre Kancir CV},
+  pdfsubject={Pierre Kancir CV},
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=blue,
+}}
 
-\usepackage[firstyear=2007,lastyear=2018]{moderntimeline}
+\usepackage[firstyear=2007,lastyear=2019]{moderntimeline}
 %\tlmaxdates{1999}{2012}
 % \tlwidth{0.8ex}
 
 \title{Ingénieur Robotique}
 \extrainfo{%
 \linkedinsocialsymbol~\httplink{www.linkedin.com/in/pierre-kancir/fr}\\%
-%\githubsocialsymbol~\httplink{www.github.com/khancyr}\\%
+\githubsocialsymbol~\httplink{www.github.com/khancyr}\\%
 %Permis B%
 }
 
@@ -54,18 +62,19 @@
 \cventry{2017 -- Aujourd'hui}{Ingénieur R\&D}{\href{http:///www.azurdrones.com/}{AzurDrones / Skeyetech}}{Mérignac}{}{%
 PME spécialiste des services de captation et de traitement de données, conseil, formation et surveillance par drones.
 \begin{itemize}
- \item Création de la seconde version de la solution de drone autonome avec station d'accueil ;
+ \item Création de la seconde version de \href{https://www.youtube.com/watch?v=TsEw0Ob9nrs}{la solution de drone autonome avec station d'accueil} et mise en production;
  \item Mise en place du service système embarqué : gestion des projets, installation d'un outil de versionning, d'intégration continue et de test ;
- \item Prototypage d'un drone en bus CAN avec UAVCAN et localisation par balise Ultra Wideband ;
- \item Renforcement par utilisation de simulations de la gestion et détection des pannes et des méthode de navigation du drone volant ;
- \item Encadrement d'une équipe de 4 personnes ;
+ \item \href{https://www.youtube.com/watch?v=PKJwuSgr23o&list=PL6sCNLbHuYxaLtItzADD5zHxixUtQPSvk&index=7&t=0s}{Renforcement par utilisation de simulations} de la gestion et détection des pannes et des méthodes de navigation du drone volant ;
+ \item Définition, implémentation et tests des redondances du système.
+ \item Obtention de la première autorisation de vol autonome sans pilote en France.
+ \item Encadrement du passage de 4 à 10 personnes ;
 \end{itemize}}
 
 \cventry{2013 -- 2017}{Doctorant/ Ingénieur d'étude}{\href{http://www.retdtechfrance.fr/}{Retdtechfrance}}{Rennes}{}{%
 TPE spécialisée en recherche et développement en mécatronique et constructeur de drones et de systèmes robotiques.
 \begin{itemize}
  \item Création de systèmes robotiques et robotisés, systèmes multi robots multi-plateformes (air, terre, mer) ;
- \item Création d'IHM avec des technologie Web pour la commande des robots et l'affichage de vidéo en temps réel ;
+ \item Création d'IHM avec des technologies Web pour la commande des robots et l'affichage de vidéo en temps réel ;
  \item Gestion de projet, réponses à consultations, à appels d'offres publics, rédaction de documentation technique ;
  \item Participation à des projets de recherches: Essaim de drones {\href{https://recherche.telecom-bretagne.eu/daisie}{DAISIE}}, Bras robot gonflable {\href{http://www.warein-sas.com/c/innovation}{Bulle}.}
 \end{itemize}}
@@ -73,15 +82,15 @@ TPE spécialisée en recherche et développement en mécatronique et constructeu
 \section{Compétences}
 
 \subsection{Robotique}
-\cvcomputer{Systèmes embarqués}{Type Rasberry Pi : Rasberry Pi 1/2/3, Odroid C1/2, Esp8266, Arduino, AVR, STM32, Android}
+\cvcomputer{Systèmes embarqués}{Type Linux SBC : Rasberry Pi, Odroid; Microcontrôleurs : Esp8266, Arduino, AVR, STM32; Android}
 \cvcomputer{Systèmes}{Automatique, communication, localisation, navigation, intelligence embarquée, interface Homme-Machine (IHM)}
 \cvcomputer{Plateformes}{UGV (Unmanned Ground Vehicle), UAV (Unmanned Aerial Vehicle), IOT}
-\cvcomputer{Simulateurs}{Ardupilot SITL\developer, Gazebo\contributor}
+\cvcomputer{Simulateurs}{\href{http://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html}{Ardupilot SITL}\developer, \href{http://gazebosim.org/}{Gazebo}\contributor}
 
 \subsection{Développement}
 \cvcomputer{Langages}{C, C++, Python, Shell/Bash, GNU Make, JavaScript}
-\cvcomputer{Frameworks}{ROS\contributor, OpenCV, Ardupilot\developer, HTML, Bootstrap, Websocket, Matlab}
-\cvcomputer{Outils}{Git, Mercurial, Cmake, Waf, GitHub, Gitlab, Clion, docker}
+\cvcomputer{Frameworks}{\href{https://www.ros.org/}{ROS}\contributor, \href{ardupilot.org}{ArduPilot}\developer, HTML, Bootstrap, Websocket, Matlab}
+\cvcomputer{Outils}{Git, Mercurial, Cmake, Waf, GitHub, Gitlab, Clion, Docker, Travis}
 \cvcomputer{Méthodes}{TDD, Kanban, CI(Continuous Integration)}
 \cvcomputer{Systèmes d'exploitation}{GNU/Linux (Debian, Ubuntu), Chibios, Windows, Android}
 
@@ -91,7 +100,7 @@ TPE spécialisée en recherche et développement en mécatronique et constructeu
 
 \section{Formations}
 
-\tlcventry{2013}{2018}{Thèse CIFRE-Défense : Mécanismes de partage optimisé d'informations et de synchronisation entre systèmes embarqués au sein d'un essaim de drones}{\href{http://www.lab-sticc.fr/en/index/}{Labsticc/Retdtech france}}{Rennes}{}{}
+\tlcventry{2013}{2018}{Thèse CIFRE-Défense : Mécanismes de partage optimisé d'informations et de synchronisation entre systèmes embarqués au sein d'un essaim de drones}{\href{http://www.lab-sticc.fr/en/index/}{Labsticc/Retdtech France}}{Rennes}{}{}
 
 \tllabelcventry{2010}{2013}{2010 -- 2013}{Formation ingénieur}{\href{https://www.imt-atlantique.fr/}{école des Mines de Nantes/ IMT Atlantique}}{Nantes}{Option: Automatique et Informatique Industrielle}{}
 
@@ -113,12 +122,12 @@ Participation au GSOC 2017 avec ArduPilot.
 	\item Réécriture de l'intégration continue.
 \end{itemize}}
 
-\cventry{2015 -- Aujourd'hui}{Développeur ArduPilot}{\href{ardupilot.org}{Ardupilot}}{}{}{%
+\cventry{2015 -- Aujourd'hui}{Développeur ArduPilot}{\href{ardupilot.org}{ArduPilot}}{}{}{%
 ArduPilot est un projet open-source d'autopilote pour micro véhicules multi-plateformes.
 \begin{itemize}
 	\item Amélioration du code pour UGV et UAV;
  	\item Réécriture d'une partie du code en C++11 et Python3 et bugs fixes ;
- 	\item Amélioration du simulateur SITL (Software In The Loop) et autotest;
+ 	\item Amélioration du simulateur SITL (Software In The Loop) et des autotest pour l'intégration continue;
  	\item Amélioration de la compatibilité avec ROS et Gazebo ;
  	\item Aide à la communauté et participation aux directions prises par le projet.
 \end{itemize}}
