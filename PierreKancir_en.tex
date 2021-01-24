@@ -1,0 +1,164 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{PierreKancir}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}       % encodage à privilégier pour la portabilité et +
+\usepackage[T1]{fontenc}      % encodage à privilégier pour la portabilité et +
+\usepackage{eurosym}
+\usepackage[english]{babel}
+\usepackage{lmodern} 
+\usepackage[margin=2.5cm]{geometry}
+%\frenchbsetup{StandardLists=true} % regle les problemes de lists
+% \linespread{0.9}
+\AfterPreamble{\hypersetup{
+  pdfauthor={Pierre Kancir},
+  pdftitle={Pierre Kancir CV},
+  pdfsubject={Pierre Kancir CV},
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=blue,
+}}
+
+\usepackage[firstyear=2007,lastyear=2020]{moderntimeline}
+%\tlmaxdates{1999}{2012}
+% \tlwidth{0.8ex}
+
+\title{Robotics engineer}
+\extrainfo{%
+\linkedinsocialsymbol~\httplink{www.linkedin.com/in/pierre-kancir/en}\\%
+\githubsocialsymbol~\httplink{www.github.com/khancyr}\\%
+%Permis B%
+}
+
+% personal data
+\firstname{Pierre}
+\familyname{Kancir}
+\address{5 rue Robelin}{35000 Rennes}
+\mobile{+33 (0) 6 67 64 64 84}
+%\phone{}
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{pierre.kancir@gmail.com}
+%\homepage{}
+%\photo[92pt]{identity}
+
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%\setmainfont{Minion Pro}
+%\setsansfont{Myriad Pro}
+
+\hyphenpenalty=10000
+
+\maketitle
+
+\renewcommand{\labelitemi}{-- }
+
+\section{Professional experiences}
+
+\cventry{2020 -- Today}{Freelance in Robotics}{\href{https://www.hivebotics.fr}{Hivebotics}}{Rennes}{France}{%
+Mobile robotics engineering office.
+\begin{itemize}
+    \item Software development.
+    \item Consulting in robotics : testing, code and product reviews, technological watch.
+\end{itemize}}
+
+\cventry{2019 -- 2019}{R\&D Engineer}{\href{https://www.esoftthings.com/en/}{esoftthings}}{Cesson-Sévigné}{France}{%
+SME specialised in the design of Advanced Driver-Assistance Systems (ADAS) based on vision and embedded artificial intelligence.
+\begin{itemize}
+    \item Creation and evaluation of an algorithm for estimating the distance of detections made on an electronic mirror.
+    \item Writing of a user manual for the Ambarella CV22 card.
+    \item Implementation of a Driver Monitoring System algorithm on the CV22 card for a demonstration.
+\end{itemize}}
+
+\cventry{2017 -- 2019}{R\&D Engineer}{\href{http:///www.azurdrones.com/}{AzurDrones / Skeyetech}}{Mérignac}{France}{%
+SME specialising in data capture and processing services, consulting, training and surveillance by UAVs.
+\begin{itemize}
+ \item Creation of the first version of \href{https://www.youtube.com/watch?v=TsEw0Ob9nrs}{the autonomous UAV solution with docking station} and production start-up ; 
+ \item Bringing up of the embedded system department: project management, installation of versioning, continuous integration and testing tools. Supervision of the transition from 4 to 10 people;
+ \item \href{https://www.youtube.com/watch?v=PKJwuSgr23o&list=PL6sCNLbHuYxaLtItzADD5zHxixUtQPSvk&index=7&t=0s}{Strengthening through the use of simulations} of the management and fault detection and navigation methods of the flying UAV;
+ \item Definition, implementation and testing of system redundancies;
+ \item Management of the technological choices of the autonomous UAV project to obtain the first authorisation for autonomous unmanned flight in France, start of research projects for the second version.
+\end{itemize}}
+
+\cventry{2013 -- 2017}{PhD Student/ R\&D Engineer}{\href{http://www.retdtechfrance.fr/}{Retdtechfrance}}{Rennes}{France}{%
+Startup specialised in research and development in mechatronics and manufacturer of drones and robotic systems.
+\begin{itemize}
+    \item Creation of robotic systems, multi-robots platform systems (air, land, sea);
+    \item Creation of HMIs with web technologies for robot control and real-time video display;
+    \item Multi partners research projects: UAV swarm {\href{https://recherche.telecom-bretagne.eu/daisie}{DAISIE}}, Inflatable robot arm {\href{http://www.warein-sas.com/c/innovation}{Bulle}}.
+\end{itemize}}
+
+\pagebreak
+
+\section{Competencies}
+
+%\subsection{Robotique}
+\cvcomputer{Embedded systems}{Linux SBC type : Rasberry Pi, Odroid; Microcontrollers : Esp8266, Arduino, AVR, STM32; Android}
+\cvcomputer{Systems}{Control theory, communication, localisation, navigation, on-board intelligence, Human-Machine Interface (HMI)}
+\cvcomputer{Platforms}{UGV (Unmanned Ground Vehicle), UAV (Unmanned Aerial Vehicle), IOT}
+\cvcomputer{Simulators}{\href{http://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html}{ArduPilot SITL}\developer, \href{http://gazebosim.org/}{Gazebo}\contributor}
+
+%\subsection{Développement}
+\cvcomputer{Languages}{C, C++, Python, Shell/Bash/Zsh, GNU Make, JavaScript}
+\cvcomputer{Frameworks}{\href{https://www.ros.org/}{ROS}\contributor, \href{http://ardupilot.org}{ArduPilot}\developer, OPENCV, HTML, Bootstrap, Websocket, Matlab}
+\cvcomputer{Tools}{Git, Mercurial, Cmake, Waf, GitHub, Gitlab, Clion, Docker, Travis}
+\cvcomputer{Methods}{TDD, Kanban, CI(Continuous Integration)}
+\cvcomputer{Operating Systems}{GNU/Linux (Debian, Ubuntu), Chibios, Windows, Android}
+
+\devnotes{Developer}{Contributor}
+
+
+\section{Diplomas}
+
+\tlcventry{2013}{2018}{PhD CIFRE-Défense : Multi-robot system design methodology: from simulation to demonstration}{\href{http://www.lab-sticc.fr/en/index/}{Labsticc/Retdtech France}}{Rennes}{\href{https://drive.google.com/open?id=1kunx6TPXdK-vvV7pQeexgF_9M8Roi05N}{Manuscrit}}{}
+
+\tllabelcventry{2010}{2013}{2010 -- 2013}{Engineering Degree}{\href{https://www.imt-atlantique.fr/}{école des Mines de Nantes/ IMT Atlantique}}{Nantes}{Option: Control theory and Industrial software}{}
+
+%\tllabelcventry{2007}{2010}{2007 -- 2010}{Classe préparatoire scientifique aux grandes écoles en filière Physique et Technologie}{\href{http://www.ldmraspail.fr/cpge-ptsi-pt.php}{Lycée Raspail}}{Paris}{Classe Etoile}{}
+
+%\tldatecventry{2007}{Baccalauréat S}{\href{http://www.lm-st-cyr.fr/}{Lycée Militaire Saint Cyr l'école}}{Saint Cyr l'école}{
+%Mention Assez Bien
+%}{}
+
+
+\subsection{Other Experiences}
+\cventry{2018 - 2020}{Google Summer Of Code}{\href{https://summerofcode.withgoogle.com/archive/2018/projects/5702907169079296/}{Google}}{Mentor}{}{%
+%Encadrement d'un étudiant au GSOC 2018 avec ArduPilot sur un projet de suivi de chemin par apprentissage avec un réseau de neurone pour un drone volant.
+}
+
+\cventry{2017}{Google Summer Of Code}{\href{https://summerofcode.withgoogle.com/projects/\#6723821496172544}{Google}}{Student}{}{%
+Participation in the GSOC 2017, open source software development program set up by Google with competitive selection, with ArduPilot.
+%\begin{itemize}
+%    \item Soumission d'un projet et acceptation d'un projet d'amélioration du support des drones terrestre (UGV).
+%	\item Réécriture du code du Rover pour accepter différentes configurations et types de moteurs ;
+%	\item Implémentation de l'évitement d'obstacles ;
+%	\item Réécriture de l'intégration continue.
+%\end{itemize}
+}
+
+\cventry{2015 -- Today}{Developer ArduPilot}{\href{http://ardupilot.org}{ArduPilot}}{}{}{%
+ArduPilot is an open-source project of autopilot for multi-platform micro vehicles.
+\begin{itemize}
+	\item Code improvement for UGV and UAV;
+ 	%\item Réécriture d'une partie du code en C++11 et Python3 et corrections de bugs ;
+ 	\item Improved the SITL (Software In The Loop) simulator and automated tests for continuous integration;
+ 	\item Improved compatibility with ROS and Gazebo;
+ 	\item Community support and participation in project governance.
+\end{itemize}}
+
+\section{Languages}
+\cvlanguage{French}{Mother tongue}{}
+\cvlanguage{English}{Fluent, IELTS: 7.0/9.0}{}
+\cvlanguage{Portuguese}{Beginner}{}
+%\cvlanguage{Russe}{Débutant}{étudié à l'école et nombreux voyages dans les pays russophones}
+
+\section{Areas of interest}
+\cvhobby{Cooking}{Lovers of good food both at home and outdoors}
+\cvhobby{Do-it-yourself}{Home staging, homelab and miscellaneous home improvements}
+
+\end{document}
+
