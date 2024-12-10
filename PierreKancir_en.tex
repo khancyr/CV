@@ -8,18 +8,20 @@
 \usepackage[english]{babel}
 \usepackage{lmodern} 
 \usepackage[margin=2.5cm]{geometry}
+\usepackage[unicode]{hyperref}
 %\frenchbsetup{StandardLists=true} % regle les problemes de lists
 % \linespread{0.9}
-\AfterPreamble{\hypersetup{
+\hypersetup{
   pdfauthor={Pierre Kancir},
   pdftitle={Pierre Kancir CV},
   pdfsubject={Pierre Kancir CV},
   colorlinks=true,
   urlcolor=blue,
   linkcolor=blue,
-}}
+}
 
-\usepackage[firstyear=2007,lastyear=2022]{moderntimeline}
+
+\usepackage[firstyear=2007,lastyear=2024]{moderntimeline}
 %\tlmaxdates{1999}{2012}
 % \tlwidth{0.8ex}
 
@@ -33,7 +35,7 @@
 % personal data
 \firstname{Pierre}
 \familyname{Kancir}
-\address{5 rue Robelin}{35000 Rennes}
+\address{16 résidence du bas frêne}{22100 Quevert}
 \mobile{+33 (0) 6 67 64 64 84}
 %\phone{}
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
@@ -42,7 +44,7 @@
 %\photo[92pt]{identity}
 
 
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -59,27 +61,27 @@
 
 \section{Professional experiences}
 
-\cventry{2022 -- Today}{Robotics Engineer}{\href{https://www.manna.aero/}{Manna Aero}}{Dublin}{Ireland}{%
-Drone delivery service.
+\cventry{2022 -- 2024}{Robotics Engineer}{\href{https://www.manna.aero/}{Manna Aero}}{Dublin}{Ireland}{%
+Company creating drones for Drone delivery service.
 \begin{itemize}
-    \item Software development and R\&D.
+    \item Embedded redundant software developpements C++.
+    \item Manage fleet deployement, communication layer (WIFI, 4G/LTE) and redundant systems (Linux, Python, C++, Docker).
 \end{itemize}}
 
 \cventry{2020 -- Today}{Freelance in Robotics}{\href{https://www.hivebotics.fr}{Hivebotics}}{Rennes}{France}{%
 Mobile robotics engineering office.
 \begin{itemize}
     \item Software development.
-    \item Speaker on some Open Source Conference : ROSConFR, ArduPilot Unconference and Teacher in Engineering schools on ROS and Drone courses.
     \item Consulting in robotics : testing, code and product reviews, technological watch.
-    \item Open Source project showcase : ROS, ArduPilot, BalenaOS.
+    % \item Speaker on some Open Source Conference : ROSConFR, ArduPilot Unconference and Teacher in Engineering schools on ROS and Drone courses.
+    % \item Consulting in robotics : testing, code and product reviews, technological watch.
+    % \item Open Source project showcase : ROS, ArduPilot, BalenaOS.
 \end{itemize}}
 
-\cventry{2019 -- 2019}{R\&D Engineer}{\href{https://www.esoftthings.com/en/}{esoftthings}}{Cesson-Sévigné}{France}{%
+\cventry{2019 -- 2020}{R\&D Engineer}{\href{https://www.esoftthings.com/en/}{esoftthings}}{Cesson-Sévigné}{France}{%
 SME specialised in the design of Advanced Driver-Assistance Systems (ADAS) based on vision and embedded artificial intelligence.
 \begin{itemize}
-    \item Creation and evaluation of an algorithm for estimating the distance of detections made on an electronic mirror. Automated testsuite with ROS and Gazebo simulation.
-    \item Writing of a user manual for the Ambarella CV22 card.
-    \item Implementation of a Driver Monitoring System algorithm on the CV22 card for a demonstration.
+    \item Creation and evaluation of Driver Monitoring System algorithm, simulation and tests on the Ambarella CV22 SBC.
 \end{itemize}}
 
 \cventry{2017 -- 2019}{R\&D Engineer}{\href{http:///www.azurdrones.com/}{AzurDrones / Skeyetech}}{Mérignac}{France}{%
@@ -87,7 +89,7 @@ SME specialising in data capture and processing services, consulting, training a
 \begin{itemize}
  \item Creation of the first version of \href{https://www.youtube.com/watch?v=TsEw0Ob9nrs}{the autonomous UAV solution with docking station} and production start-up ; 
  \item Bringing up of the embedded system department: project management, installation of versioning, continuous integration and testing tools. Supervision of the transition from 4 to 10 people;
- \item \href{https://www.youtube.com/watch?v=PKJwuSgr23o&list=PL6sCNLbHuYxaLtItzADD5zHxixUtQPSvk&index=7&t=0s}{Strengthening through the use of simulations} of the management and fault detection and navigation methods of the flying UAV;
+ % \item \href{https://www.youtube.com/watch?v=PKJwuSgr23o&list=PL6sCNLbHuYxaLtItzADD5zHxixUtQPSvk&index=7&t=0s}{Strengthening through the use of simulations} of the management and fault detection and navigation methods of the flying UAV;
  \item Definition, implementation and testing of system redundancies;
  \item Management of the technological choices of the autonomous UAV project to obtain the first authorisation for autonomous unmanned flight in France, start of research projects for the second version.
 \end{itemize}}
@@ -100,22 +102,28 @@ Startup specialised in research and development in mechatronics and manufacturer
     \item Multi partners research projects: UAV swarm {\href{https://recherche.telecom-bretagne.eu/daisie}{DAISIE}}, Inflatable robot arm {\href{http://www.warein-sas.com/c/innovation}{Bulle}}.
 \end{itemize}}
 
+\cventry{2013 -- 2024}{Lecturer}{}{}{}{
+\begin{itemize}
+ \item Lectures on robotics and drones in France and abroad ;
+ \item Engineering school courses ;
+\end{itemize}}
+
 \pagebreak
 
 \section{Competencies}
 
 %\subsection{Robotique}
-\cvcomputer{Embedded systems}{Linux SBC type : Rasberry Pi, Odroid; Microcontrollers : Esp8266/32, Arduino, AVR, STM32; Android}
-\cvcomputer{Systems}{Control theory, communication, localisation, navigation, on-board intelligence, Human-Machine Interface (HMI)}
-\cvcomputer{Platforms}{UGV (Unmanned Ground Vehicle), UAV (Unmanned Aerial Vehicle), IOT}
+\cvcomputer{Embedded systems}{Linux SBC : Jetson, Beaglebone, Rasberry Pi, Odroid, X86; Microcontrôleurs : Esp8266/32, STM32; Android}
+% \cvcomputer{Systems}{Control theory, communication, localisation, navigation, on-board intelligence, Human-Machine Interface (HMI)}
+\cvcomputer{Platforms}{UGV (Unmanned Ground Vehicle), UAV (Unmanned Aerial Vehicle), USV (Unmanned Surface Vehicle), IOT}
 \cvcomputer{Simulators}{\href{http://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html}{ArduPilot SITL}\developer, \href{http://gazebosim.org/}{Gazebo}\contributor}
 
 %\subsection{Développement}
 \cvcomputer{Languages}{C, C++, Python, Shell/Bash/Zsh, GNU Make, JavaScript}
 \cvcomputer{Frameworks}{\href{https://www.ros.org/}{ROS}\contributor, \href{http://ardupilot.org}{ArduPilot}\developer, OPENCV, HTML, Bootstrap, Websocket, Matlab}
-\cvcomputer{Tools}{Git, Mercurial, Cmake, Waf, GitHub, Gitlab, Clion, Docker, Travis, Github Actions}
-\cvcomputer{Methods}{TDD, Kanban, CI(Continuous Integration)}
-\cvcomputer{Operating Systems}{GNU/Linux (Debian, Ubuntu), Chibios, Windows, Android}
+\cvcomputer{Tools}{Git, Mercurial, Cmake, Waf, GitHub, Gitlab, Docker, Github Actions, LibIIO, MQTT, REST}
+\cvcomputer{Methods}{TDD, Kanban, CI(Continuous Integration), PyTest, Gtest}
+\cvcomputer{Operating Systems}{GNU/Linux (Debian, Ubuntu), Chibios, BalenaOS, Windows}
 
 \devnotes{Developer}{Contributor}
 
@@ -151,10 +159,10 @@ Participation in the GSOC 2017, open source software development program set up 
 \cventry{2015 -- Today}{Developer ArduPilot}{\href{http://ardupilot.org}{ArduPilot}}{}{}{%
 ArduPilot is an open-source project of autopilot for multi-platform micro vehicles.
 \begin{itemize}
-	\item Code improvement for UGV and UAV;
+	\item Code improvement for UGV, UAV and USV;
  	%\item Réécriture d'une partie du code en C++11 et Python3 et corrections de bugs ;
  	\item Improved the SITL (Software In The Loop) simulator and automated tests for continuous integration, Maintain Docker environment;
- 	\item Improved compatibility with ROS and Gazebo;
+ 	% \item Improved compatibility with ROS and Gazebo;
  	\item Community support and participation in project governance.
 \end{itemize}}
 
@@ -166,7 +174,7 @@ ArduPilot is an open-source project of autopilot for multi-platform micro vehicl
 
 \section{Areas of interest}
 \cvhobby{Cooking}{Lovers of good food both at home and outdoors}
-\cvhobby{Do-it-yourself}{Home staging, homelab and miscellaneous home improvements}
+\cvhobby{Do-it-yourself}{Home staging, homelab, domotics and miscellaneous home improvements}
 
 \end{document}
 

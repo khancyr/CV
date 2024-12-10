@@ -8,18 +8,20 @@
 \usepackage[french]{babel}
 \usepackage{lmodern} 
 \usepackage[margin=2.5cm]{geometry}
+\usepackage[unicode]{hyperref}
 %\frenchbsetup{StandardLists=true} % regle les problemes de lists
 % \linespread{0.9}
-\AfterPreamble{\hypersetup{
+\hypersetup{
   pdfauthor={Pierre Kancir},
   pdftitle={Pierre Kancir CV},
   pdfsubject={Pierre Kancir CV},
   colorlinks=true,
   urlcolor=blue,
   linkcolor=blue,
-}}
+}
 
-\usepackage[firstyear=2007,lastyear=2021]{moderntimeline}
+
+\usepackage[firstyear=2007,lastyear=2024]{moderntimeline}
 %\tlmaxdates{1999}{2012}
 % \tlwidth{0.8ex}
 
@@ -34,7 +36,7 @@
 % personal data
 \firstname{Pierre}
 \familyname{Kancir}
-\address{5 rue Robelin}{35000 Rennes}
+\address{16 résidence du bas frêne}{22100 Quevert}
 \mobile{+33 (0) 6 67 64 64 84}
 %\phone{}
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
@@ -43,7 +45,7 @@
 %\photo[92pt]{identity}
 
 
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -52,29 +54,33 @@
 %\setmainfont{Minion Pro}
 %\setsansfont{Myriad Pro}
 
+
 \hyphenpenalty=10000
 
 \maketitle
-
 \renewcommand{\labelitemi}{-- }
-
 \section{Expériences professionnelles}
+
+\cventry{2022 -- 2024}{Robotics Engineer}{\href{https://www.manna.aero/}{Manna Aero}}{Dublin}{Ireland}{%
+PME réalisant des drones pour de la livraison sub-urbaine.
+\begin{itemize}
+    \item Développement embarqué de l'autopilote avec redondance en C++
+    \item Gestion des déploiements sur flotte, gestion des communications (WIFI, 4G/LTE) et systèmes redondants (Linux, Python, C++, Docker).
+\end{itemize}}
 
 \cventry{2020 -- Aujourd'hui}{Freelance en Robotique}{\href{https://www.hivebotics.fr}{Hivebotics}}{Rennes}{}{%
 Bureau d'études en robotique mobile.
 \begin{itemize}
     \item Développement de code.
-    \item Formation.
+    % \item Conférencier: ROSConFR, ArduPilot Unconference et Formations en robotique en école d'ingénieur: ROS, Drone.
     \item Services en robotique : tests, analyse de code et solution, veille technologique.
-    \item Démonstrations d'usage de solutions Open Source : ROS, ArduPilot, BalenaOS.
+    % \item Démonstrations d'usage de solutions Open Source : ROS, ArduPilot, BalenaOS.
 \end{itemize}}
 
-\cventry{2019 -- 2019}{Ingénieur R\&D}{\href{https://www.esoftthings.com/en/}{esoftthings}}{Cesson-Sévigné}{}{%
-PME spécialisée le design de système Advanced Driver-Assistance Systems (ADAS) basé sur la vision et l'intelligence artificielle embarquée.
+\cventry{2019 -- 2020}{Ingénieur R\&D}{\href{https://www.esoftthings.com/en/}{esoftthings}}{Cesson-Sévigné}{}{%
+PME spécialisée dans le design de système Advanced Driver-Assistance Systems (ADAS) basé sur la vision et l'intelligence artificielle embarquée.
 \begin{itemize}
-    \item Création et évaluation d'un algorithme d'estimation de distance des détections effectuées sur un rétroviseur électronique (mono camera). Suite de tests automatisés sous ROS et Gazebo.
-    \item Rédaction d'un manuel d'utilisation de la carte CV22 d'Ambarella.
-    \item Implémentation d'un algorithme Driver Monitoring Système sur la carte CV22 pour une démonstration.
+    \item Création et évaluation d'algorithmes Driver Monitoring Système, simulation et test sur carte CV22 d'Ambarella.
 \end{itemize}}
 
 \cventry{2017 -- 2019}{Ingénieur R\&D}{\href{http:///www.azurdrones.com/}{AzurDrones / Skeyetech}}{Mérignac}{}{%
@@ -82,7 +88,7 @@ PME spécialiste des services de captation et de traitement de données, conseil
 \begin{itemize}
  \item Création de la première version de \href{https://www.youtube.com/watch?v=TsEw0Ob9nrs}{la solution de drone autonome avec station d'accueil} et mise en production ; 
  \item Mise en place du service système embarqué : gestion des projets, installation d'un outil de versionning, d'intégration continue et de test; %Encadrement du passage de 4 à 10 personnes ;
- \item \href{https://www.youtube.com/watch?v=PKJwuSgr23o&list=PL6sCNLbHuYxaLtItzADD5zHxixUtQPSvk&index=7&t=0s}{Renforcement par utilisation de simulations} de la gestion et détection des pannes et des méthodes de navigation du drone volant ;
+ % \item \href{https://www.youtube.com/watch?v=PKJwuSgr23o&list=PL6sCNLbHuYxaLtItzADD5zHxixUtQPSvk&index=7&t=0s}{Renforcement par utilisation de simulations} de la gestion et détection des pannes et des méthodes de navigation du drone volant ;
  \item Définition, implémentation et tests des redondances du système ;
  \item Gestion des choix technologiques du projet drone autonome pour l'obtention de la première autorisation de vol autonome sans pilote en France, mise en place de projets de recherche pour la deuxième version.
 \end{itemize}}
@@ -96,22 +102,29 @@ TPE spécialisée en recherche et développement en mécatronique et constructeu
  \item Participation à des projets de recherches: Essaim de drones {\href{https://recherche.telecom-bretagne.eu/daisie}{DAISIE}}, Bras robot gonflable {\href{http://www.warein-sas.com/c/innovation}{Bulle}}.
 \end{itemize}}
 
+\cventry{2013 -- 2024}{Conférencier}{}{}{}{
+\begin{itemize}
+ \item Conférences sur les thèmes de la robotique et des drones en France et à l'international ;
+ \item Cours en écoles d'ingénieurs ;
+\end{itemize}}
+
+
 \pagebreak
 
 \section{Compétences}
 
 %\subsection{Robotique}
-\cvcomputer{Systèmes embarqués}{Linux SBC : iMx6, Beaglebone, Rasberry Pi, Odroid; Microcontrôleurs : Esp8266/32, Arduino, AVR, STM32; Android}
-\cvcomputer{Systèmes}{Automatique, communication, localisation, navigation, intelligence embarquée, interface Homme-Machine (IHM)}
-\cvcomputer{Plateformes}{UGV (Unmanned Ground Vehicle), UAV (Unmanned Aerial Vehicle), IOT}
+\cvcomputer{Systèmes embarqués}{Linux SBC : Jetson, Beaglebone, Rasberry Pi, Odroid, X86; Microcontrôleurs : Esp8266/32, STM32; Android}
+% \cvcomputer{Systèmes}{Automatique, communication, localisation, navigation, intelligence embarquée, interface Homme-Machine (IHM)}
+\cvcomputer{Plateformes}{UGV (Unmanned Ground Vehicle), UAV (Unmanned Aerial Vehicle), USV (Unmanned Surface Vehicle), IOT}
 \cvcomputer{Simulateurs}{\href{http://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html}{ArduPilot SITL}\developer, \href{http://gazebosim.org/}{Gazebo}\contributor}
 
 %\subsection{Développement}
 \cvcomputer{Langages}{C, C++, Python, Shell/Bash/Zsh, JavaScript}
-\cvcomputer{Frameworks}{\href{https://www.ros.org/}{ROS}\contributor, \href{http://ardupilot.org}{ArduPilot}\developer, OPENCV, GStreamer, HTML, Bootstrap, Websocket, Matlab}
-\cvcomputer{Outils}{Git, Valgrind, Make, Cmake, Waf, Docker, Travis, Github Actions, LibIIO}
-\cvcomputer{Méthodes}{TDD, Kanban, CI(Continuous Integration)}
-\cvcomputer{Systèmes d'exploitation}{GNU/Linux (Debian, Ubuntu), FreeRTOS, Chibios, Windows}
+\cvcomputer{Frameworks}{\href{https://www.ros.org/}{ROS}\contributor, \href{http://ardupilot.org}{ArduPilot}\developer, OPENCV, GStreamer, HTML, Bootstrap, VueJs, Websocket, Tornado, Matlab}
+\cvcomputer{Outils}{Git, Valgrind, Make, Cmake, Waf, Docker, Travis, Github Actions, LibIIO, MQTT, REST}
+\cvcomputer{Méthodes}{TDD, Kanban, CI(Continuous Integration), Pytest, Gtest}
+\cvcomputer{Systèmes d'exploitation}{GNU/Linux (Debian, Ubuntu), FreeRTOS, Chibios, BalenaOS, Windows}
 
 \devnotes{Développeur}{Contributeur}
 
@@ -130,7 +143,7 @@ TPE spécialisée en recherche et développement en mécatronique et constructeu
 
 
 \subsection{Autres Expériences}
-\cventry{2018}{Google Summer Of Code}{\href{https://summerofcode.withgoogle.com/archive/2018/projects/5702907169079296/}{Google}}{Encadrant}{}{%
+\cventry{2018 -- 2020}{Google Summer Of Code}{\href{https://summerofcode.withgoogle.com/archive/2018/projects/5702907169079296/}{Google}}{Encadrant}{}{%
 %Encadrement d'un étudiant au GSOC 2018 avec ArduPilot sur un projet de suivi de chemin par apprentissage avec un réseau de neurone pour un drone volant.
 }
 
@@ -147,22 +160,21 @@ Participation au GSOC 2017, programme de développement des logiciels open sourc
 \cventry{2015 -- Aujourd'hui}{Développeur ArduPilot}{\href{http://ardupilot.org}{ArduPilot}}{}{}{%
 ArduPilot est un projet open-source d'autopilote pour micro véhicules multi-plateformes.
 \begin{itemize}
-	\item Amélioration du code pour UGV et UAV;
+	\item Amélioration du code pour UGV, UAV, USV;
  	%\item Réécriture d'une partie du code en C++11 et Python3 et corrections de bugs ;
  	\item Amélioration du simulateur SITL (Software In The Loop) et des tests automatisés pour l'intégration continue;
  	\item Gestion de l'environement Docker pour le projet;
- 	\item Amélioration de la compatibilité avec ROS et Gazebo ;
+ 	% \item Amélioration de la compatibilité avec ROS et Gazebo ;
  	\item Aide à la communauté et participation à la gouvernance du projet.
 \end{itemize}}
 
 \section{Langues}
 \cvlanguage{Anglais}{Compétence professionnelle, IELTS: 7.0/9.0}{Pratique régulière}
-\cvlanguage{Portugais}{Débutant}{Pratique occasionnelle avec ma femme Brésilienne}
+\cvlanguage{Portugais}{Débutant}{Pratique occasionnelle}
 %\cvlanguage{Russe}{Débutant}{étudié à l'école et nombreux voyages dans les pays russophones}
 
 \section{Centres d'intérêt}
 \cvhobby{Cuisine}{Amateur de bonne cuisine à la fois à la maison et à l'extérieur}
-\cvhobby{Bricolage}{Home staging, homelab et diverses améliorations à la maison}
+\cvhobby{Bricolage}{Home staging, homelab, domotique et diverses améliorations à la maison}
 
 \end{document}
-
